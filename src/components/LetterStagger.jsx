@@ -53,6 +53,7 @@ export const LetterStagger = ({ children, delay = 0 }) => {
                 >
                     {char === ' ' ? '\u00A0' : char}
                 </motion.span>
+
             ))}
         </motion.span>
     );

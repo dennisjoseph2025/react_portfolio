@@ -37,7 +37,7 @@ const Home = () => {
                     </h1>
                     <div className="flex flex-col gap-2">
                         <span className="text-lg md:text-2xl font-light text-white/40 tracking-[0.3em] uppercase">
-                            Frontend Engineer
+                            Software Developer
                         </span>
                         <div className="flex items-center gap-2 text-white/30 text-sm">
                             <MapPin size={14} />
@@ -79,10 +79,6 @@ const Home = () => {
                 <div className="max-w-xs text-neutral-400 text-sm md:text-base leading-relaxed">
                     Crafting digital experiences where motion meets function. Building scalable interfaces that feel alive.
                 </div>
-                <MagneticButton className="hidden md:flex flex-col items-center gap-2 text-white/50 hover:text-white transition-colors">
-                    <span className="text-xs uppercase tracking-widest">Scroll</span>
-                    <ArrowDown className="animate-bounce" size={20} />
-                </MagneticButton>
             </motion.div>
         </section>
     );
