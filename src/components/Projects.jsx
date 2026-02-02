@@ -21,7 +21,7 @@ const projects = [
         color: "#06B6D4",
         github: "https://github.com/dennisjoseph2025/student_management_django",
         demo: "https://student-management-django-omega.vercel.app/",
-        image: "/src/assets/projects/student_management.png"
+        image: "/projects/student_management.png"
     },
     {
         id: 2,
@@ -38,7 +38,7 @@ const projects = [
         color: "#F59E0B",
         github: "https://github.com/dennisjoseph2025/React_Portfolio",
         demo: "https://dennis-r.vercel.app/",
-        image: "/src/assets/projects/portfolio.png"
+        image: "/projects/Portfolio.png"
     },
     {
         id: 3,
@@ -55,7 +55,7 @@ const projects = [
         color: "#8B5CF6",
         github: "https://github.com/dennisjoseph2025/React-ECommerce-Website",
         demo: "https://react-e-commerce-website-omega.vercel.app/",
-        image: "/src/assets/projects/E_Commerce.png"
+        image: "/projects/E_Commerce.png"
     },
 ];
 
