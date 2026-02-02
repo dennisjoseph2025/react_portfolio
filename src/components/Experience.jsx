@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Briefcase, Calendar, MapPin, ChevronRight } from 'lucide-react';
 
 const experiences = [
@@ -81,8 +81,8 @@ const ExperienceCard = ({ exp, index }) => {
 
 const Experience = () => {
     return (
-        <section id="experience" className="py-32 px-6 bg-black relative z-10 scroll-mt-20">
-            <div className="max-w-4xl mx-auto">
+        <section className="py-32 px-6 bg-black relative z-10">
+            <div id="experience" className="max-w-4xl mx-auto scroll-mt-[15vh]">
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -90,7 +90,7 @@ const Experience = () => {
                     className="mb-16"
                 >
                     <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter mb-4">
-                        Experience
+                        EXPERIENCE
                     </h2>
                     <p className="text-white/40 text-lg max-w-xl">
                         Professional path and contributions in frontend excellence.

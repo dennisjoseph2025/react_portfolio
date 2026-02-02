@@ -3,9 +3,10 @@ import { GraduationCap, Award, ExternalLink } from 'lucide-react';
 
 const Certifications = () => {
     return (
-        <section id="certifications" className="py-32 px-6 bg-black relative z-10 border-t border-neutral-900">
-            <div className="max-w-6xl mx-auto">
+        <section className="py-32 px-6 bg-black relative z-10 border-t border-neutral-900">
+            <div id="certifications" className="max-w-6xl mx-auto scroll-mt-[15vh]">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+
                     {/* Education */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}

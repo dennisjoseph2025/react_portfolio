@@ -2,7 +2,8 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Terminal, Activity } from 'lucide-react';
 
 const activityLog = [
-    { type: 'learning', text: 'Completed Advanced React Portfolio Using Antigravity AI', date: 'Today' },
+    { type: 'learned', text: 'Completed Student Management Platform Using Django', date: 'Today' },
+    { type: 'learning', text: 'Completed Advanced React Portfolio Using Antigravity AI', date: '1 day ago' },
     { type: 'learned', text: 'Completed SQL Queries and Database Management Using Postgresql', date: '1 week ago' },
     { type: 'learning', text: 'Deep dive into Python/Django Backend Development', date: '2 weeks ago' },
     { type: 'learned', text: 'Mastered Redux Toolkit & RTK Query', date: '2 months ago' },
@@ -38,11 +39,10 @@ export const ActivityTicker = () => {
 
     return (
         <motion.section
-            id="activity"
             style={{ opacity }}
-            className="py-24 px-6 bg-black relative z-10 border-t border-b border-neutral-900 scroll-mt-20"
+            className="py-32 px-6 bg-black relative z-10 border-t border-b border-neutral-900"
         >
-            <div className="max-w-7xl mx-auto">
+            <div id="activity" className="max-w-7xl mx-auto scroll-mt-[15vh]">
                 <div className="flex items-center gap-3 mb-8">
                     <Terminal size={20} className="text-green-400" />
                     <h3 className="text-xl font-mono text-white/80 uppercase tracking-wider">

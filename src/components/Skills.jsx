@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Code, Database, GitBranch, Layout, Layers, Server } from 'lucide-react';
+import { Database, GitBranch, Layout, Layers, Server } from 'lucide-react';
 
 const skillCategories = [
     {
@@ -80,8 +80,8 @@ const SkillCategory = ({ category, index }) => {
 
 const Skills = () => {
     return (
-        <section id="skills" className="py-32 px-6 bg-black relative z-10 scroll-mt-20">
-            <div className="max-w-6xl mx-auto">
+        <section className="py-32 px-6 bg-black relative z-10">
+            <div id="skills" className="max-w-6xl mx-auto scroll-mt-[15vh]">
                 {/* Header */}
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -90,7 +90,7 @@ const Skills = () => {
                     className="mb-16"
                 >
                     <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter mb-4">
-                        Skills
+                        SKILLS
                     </h2>
                     <p className="text-white/40 text-lg max-w-xl">
                         Technologies I work with, organized by domain.

@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { useRef } from 'react';
 import { MapPin, Globe, Zap, Code, Layers, RefreshCw, Target } from 'lucide-react';
 
 const AboutBlock = ({ title, children, delay = 0 }) => (
@@ -44,8 +43,8 @@ const IdentityTag = ({ children, delay = 0 }) => (
 
 const About = () => {
     return (
-        <section id="about" className="py-32 px-6 bg-black relative z-10 scroll-mt-20">
-            <div className="max-w-6xl mx-auto">
+        <section className="py-32 px-6 bg-black relative z-10">
+            <div id="about" className="max-w-6xl mx-auto scroll-mt-[15vh]">
                 {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -54,7 +53,7 @@ const About = () => {
                     className="mb-20"
                 >
                     <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter mb-4">
-                        About
+                        ABOUT
                     </h2>
                     <div className="w-24 h-1 bg-white/20" />
                 </motion.div>
