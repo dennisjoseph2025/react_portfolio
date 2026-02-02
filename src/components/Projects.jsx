@@ -5,26 +5,10 @@ import { LetterStagger } from "./LetterStagger";
 import { ParallaxText } from "./MaskedReveal";
 
 const projects = [
+
     {
         id: 1,
-        title: "Denjo-C",
-        problem: "Modern e-commerce platform with a focus on seamless shopping experience and premium product presentation.",
-        tech: ["React", "Vite", "Tailwind CSS", "Redux Toolkit"],
-        built: [
-            "Dynamic product listing",
-            "Shopping cart logic",
-            "Responsive Slider Navigation",
-            "Premium Visual Aesthetic"
-        ],
-        outcome: "Enhanced frontend architectural skills and state management implementation.",
-        color: "#8B5CF6",
-        github: "https://github.com/dennisjoseph2025/React-ECommerce-Website",
-        demo: "https://react-e-commerce-website-omega.vercel.app/",
-        image: "/src/assets/projects/ecommerce.png"
-    },
-    {
-        id: 2,
-        title: "EduSync",
+        title: "EduCom.",
         problem: "Robust student management system for educational institutions to track students, courses, and attendance.",
         tech: ["Django", "Python", "PostgreSQL", "Bootstrap"],
         built: [
@@ -40,7 +24,7 @@ const projects = [
         image: "/src/assets/projects/student_management.png"
     },
     {
-        id: 3,
+        id: 2,
         title: "Portfolio",
         problem: "Interactive career portfolio designed to showcase skills and projects with a premium aesthetic.",
         tech: ["React", "Framer Motion", "Tailwind CSS", "Lenis"],
@@ -55,6 +39,23 @@ const projects = [
         github: "https://github.com/dennisjoseph2025/React_Portfolio",
         demo: "https://dennis-r.vercel.app/",
         image: "/src/assets/projects/portfolio.png"
+    },
+    {
+        id: 3,
+        title: "Denjo-C",
+        problem: "Modern e-commerce platform with a focus on seamless shopping experience and premium product presentation.",
+        tech: ["React", "Vite", "Tailwind CSS", "Redux Toolkit"],
+        built: [
+            "Dynamic product listing",
+            "Shopping cart logic",
+            "Responsive Slider Navigation",
+            "Premium Visual Aesthetic"
+        ],
+        outcome: "Enhanced frontend architectural skills and state management implementation.",
+        color: "#8B5CF6",
+        github: "https://github.com/dennisjoseph2025/React-ECommerce-Website",
+        demo: "https://react-e-commerce-website-omega.vercel.app/",
+        image: "/src/assets/projects/E_Commerce.png"
     },
 ];
 
