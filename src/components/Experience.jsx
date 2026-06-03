@@ -81,7 +81,7 @@ const ExperienceCard = ({ exp, index }) => {
 
 const Experience = () => {
     return (
-        <section className="py-32 px-6 bg-black relative z-10">
+        <section className="py-32 px-6 bg-neutral-950 relative z-10 border-t border-white/[0.03]">
             <div id="experience" className="max-w-4xl mx-auto scroll-mt-[15vh]">
                 <motion.div
                     initial={{ opacity: 0 }}

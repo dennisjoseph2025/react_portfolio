@@ -4,7 +4,7 @@ import { ArrowDown, MapPin } from 'lucide-react';
 import { MagneticButton } from './MagneticButton';
 import { motionConfig, prefersReducedMotion } from '../utils/motionConfig';
 
-const techStack = ['React', 'Tailwind CSS', 'Redux Toolkit', 'Framer Motion', 'Python', 'Django'];
+const techStack = ['Python', 'Django', 'DRF','ORM', 'PostgreSQL', 'AWS', 'Docker', 'Celery', 'React', 'TypeScript', 'Tailwind CSS','Redux','JS'];
 
 const Home = () => {
     const ref = useRef(null);
@@ -37,7 +37,7 @@ const Home = () => {
                     </h1>
                     <div className="flex flex-col gap-2">
                         <span className="text-lg md:text-2xl font-light text-white/40 tracking-[0.3em] uppercase">
-                            Software Developer
+                            Full-Stack Developer
                         </span>
                         <div className="flex items-center gap-2 text-white/30 text-sm">
                             <MapPin size={14} />
@@ -77,7 +77,7 @@ const Home = () => {
                 className="absolute bottom-12 left-6 md:left-12 flex items-end gap-12 z-20"
             >
                 <div className="max-w-xs text-neutral-400 text-sm md:text-base leading-relaxed">
-                    Crafting digital experiences where motion meets function. Building scalable interfaces that feel alive.
+                    Building scalable backend systems with Python, Django, and AWS. Full-stack development with a backend focus.
                 </div>
             </motion.div>
         </section>

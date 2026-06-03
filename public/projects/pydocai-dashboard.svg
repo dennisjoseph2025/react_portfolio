@@ -1,0 +1,49 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#0F0F0F"/>
+  <rect x="0" y="0" width="1280" height="56" fill="#1A1A1A"/>
+  <rect x="20" y="16" width="120" height="24" rx="4" fill="#22C55E" opacity="0.2"/>
+  <rect x="20" y="20" width="80" height="16" rx="2" fill="#22C55E"/>
+  <rect x="1150" y="16" width="100" height="24" rx="4" fill="#FFFFFF" opacity="0.1"/>
+  <rect x="1160" y="20" width="80" height="16" rx="2" fill="#FFFFFF" opacity="0.3"/>
+  <rect x="40" y="80" width="400" height="48" rx="8" fill="#1A1A1A" stroke="#22C55E" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="60" y="108" font-family="monospace" font-size="14" fill="#FFFFFF" opacity="0.5">Enter GitHub URL or upload file...</text>
+  <rect x="460" y="80" width="120" height="48" rx="8" fill="#22C55E"/>
+  <text x="492" y="108" font-family="monospace" font-size="14" fill="#000000" font-weight="bold">Generate</text>
+  <rect x="40" y="150" width="550" height="200" rx="12" fill="#1A1A1A" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+  <text x="60" y="180" font-family="monospace" font-size="12" fill="#22C55E"># Source Code Preview</text>
+  <text x="60" y="205" font-family="monospace" font-size="11" fill="#FFFFFF" opacity="0.4">import os</text>
+  <text x="60" y="225" font-family="monospace" font-size="11" fill="#FFFFFF" opacity="0.4">from django.db import models</text>
+  <text x="60" y="245" font-family="monospace" font-size="11" fill="#FFFFFF" opacity="0.4">from django.contrib.auth.models import User</text>
+  <text x="60" y="270" font-family="monospace" font-size="11" fill="#FFFFFF" opacity="0.4">class Project(models.Model):</text>
+  <text x="80" y="290" font-family="monospace" font-size="11" fill="#FFFFFF" opacity="0.4">name = models.CharField(max_length=200)</text>
+  <text x="80" y="310" font-family="monospace" font-size="11" fill="#FFFFFF" opacity="0.4">description = models.TextField()</text>
+  <rect x="610" y="150" width="630" height="200" rx="12" fill="#1A1A1A" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+  <text x="630" y="180" font-family="monospace" font-size="12" fill="#22C55E"># Generated Documentation</text>
+  <text x="630" y="210" font-family="monospace" font-size="13" fill="#22C55E" font-weight="bold"># Project: Project Model</text>
+  <text x="630" y="235" font-family="sans-serif" font-size="11" fill="#FFFFFF" opacity="0.6">The Project model represents a documentation project</text>
+  <text x="630" y="255" font-family="sans-serif" font-size="11" fill="#FFFFFF" opacity="0.6">created by users. It stores metadata, parsed AST data,</text>
+  <text x="630" y="275" font-family="sans-serif" font-size="11" fill="#FFFFFF" opacity="0.6">and generated documentation content.</text>
+  <rect x="40" y="375" width="250" height="150" rx="12" fill="#1A1A1A" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+  <text x="60" y="400" font-family="monospace" font-size="11" fill="#FFFFFF" opacity="0.4">Total Projects</text>
+  <text x="60" y="440" font-family="monospace" font-size="32" fill="#22C55E" font-weight="bold">12</text>
+  <rect x="310" y="375" width="250" height="150" rx="12" fill="#1A1A1A" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+  <text x="330" y="400" font-family="monospace" font-size="11" fill="#FFFFFF" opacity="0.4">Files Parsed</text>
+  <text x="330" y="440" font-family="monospace" font-size="32" fill="#22C55E" font-weight="bold">47</text>
+  <rect x="580" y="375" width="250" height="150" rx="12" fill="#1A1A1A" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+  <text x="600" y="400" font-family="monospace" font-size="11" fill="#FFFFFF" opacity="0.4">Docs Generated</text>
+  <text x="600" y="440" font-family="monospace" font-size="32" fill="#22C55E" font-weight="bold">8</text>
+  <rect x="850" y="375" width="200" height="150" rx="12" fill="#1A1A1A" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+  <rect x="870" y="395" width="160" height="4" rx="2" fill="#22C55E" opacity="0.3"/>
+  <rect x="870" y="410" width="120" height="4" rx="2" fill="#22C55E" opacity="0.2"/>
+  <rect x="870" y="425" width="140" height="4" rx="2" fill="#22C55E" opacity="0.25"/>
+  <rect x="870" y="440" width="100" height="4" rx="2" fill="#22C55E" opacity="0.15"/>
+  <text x="870" y="475" font-family="monospace" font-size="11" fill="#FFFFFF" opacity="0.4">Processing...</text>
+  <rect x="40" y="550" width="1200" height="140" rx="12" fill="#1A1A1A" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+  <text x="60" y="580" font-family="monospace" font-size="11" fill="#22C55E">Recent Projects</text>
+  <rect x="60" y="595" width="360" height="40" rx="6" fill="#FFFFFF" opacity="0.05"/>
+  <text x="75" y="620" font-family="monospace" font-size="11" fill="#FFFFFF" opacity="0.6">django-rest-framework</text>
+  <rect x="440" y="595" width="360" height="40" rx="6" fill="#FFFFFF" opacity="0.05"/>
+  <text x="455" y="620" font-family="monospace" font-size="11" fill="#FFFFFF" opacity="0.6">e-commerce-backend</text>
+  <rect x="820" y="595" width="360" height="40" rx="6" fill="#FFFFFF" opacity="0.05"/>
+  <text x="835" y="620" font-family="monospace" font-size="11" fill="#FFFFFF" opacity="0.6">portfolio-generator</text>
+</svg>

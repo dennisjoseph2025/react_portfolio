@@ -3,34 +3,34 @@ import { Database, GitBranch, Layout, Layers, Server } from 'lucide-react';
 
 const skillCategories = [
     {
+        title: "Backend",
+        icon: Server,
+        color: "#10B981",
+        skills: ["Python", "Django", "Django REST Framework", "REST APIs", "Celery", "Redis", "JWT", "OAuth"]
+    },
+    {
+        title: "Cloud & DevOps",
+        icon: GitBranch,
+        color: "#EF4444",
+        skills: ["AWS (EC2, RDS, S3, CloudFront)", "Docker", "GitHub Actions", "Linux", "Nginx", "PgBouncer"]
+    },
+    {
+        title: "Database",
+        icon: Database,
+        color: "#F59E0B",
+        skills: ["PostgreSQL", "SQL", "Redis", "Database Design"]
+    },
+    {
         title: "Frontend",
         icon: Layout,
         color: "#8B5CF6",
-        skills: ["React", "HTML5", "CSS3", "JavaScript", "Tailwind CSS", "Bootstrap"]
+        skills: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"]
     },
     {
         title: "State Management",
         icon: Layers,
         color: "#06B6D4",
         skills: ["Redux Toolkit", "Context API", "RTK Query"]
-    },
-    {
-        title: "Backend",
-        icon: Server,
-        color: "#10B981",
-        skills: ["Python", "Django", "REST APIs"]
-    },
-    {
-        title: "Database",
-        icon: Database,
-        color: "#F59E0B",
-        skills: ["SQL", "PostgreSQL"]
-    },
-    {
-        title: "Tools",
-        icon: GitBranch,
-        color: "#EF4444",
-        skills: ["Git", "GitHub", "VS Code", "Figma"]
     }
 ];
 
@@ -43,9 +43,9 @@ const SkillCategory = ({ category, index }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="group"
+            className="group h-full"
         >
-            <div className="bg-neutral-900/50 border border-neutral-800 rounded-2xl p-6 hover:border-neutral-700 transition-all duration-300">
+            <div className="bg-neutral-900/50 border border-neutral-800 rounded-2xl p-6 hover:border-neutral-700 transition-all duration-300 h-full flex flex-col">
                 {/* Header */}
                 <div className="flex items-center gap-3 mb-6">
                     <div
@@ -58,7 +58,7 @@ const SkillCategory = ({ category, index }) => {
                 </div>
 
                 {/* Skills Grid */}
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 flex-1">
                     {category.skills.map((skill, i) => (
                         <motion.span
                             key={skill}
@@ -80,7 +80,7 @@ const SkillCategory = ({ category, index }) => {
 
 const Skills = () => {
     return (
-        <section className="py-32 px-6 bg-black relative z-10">
+        <section className="py-32 px-6 bg-[#0D0D0D] relative z-10 border-t border-white/[0.02]">
             <div id="skills" className="max-w-6xl mx-auto scroll-mt-[15vh]">
                 {/* Header */}
                 <motion.div

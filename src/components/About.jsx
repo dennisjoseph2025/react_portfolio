@@ -43,7 +43,7 @@ const IdentityTag = ({ children, delay = 0 }) => (
 
 const About = () => {
     return (
-        <section className="py-32 px-6 bg-black relative z-10">
+        <section className="py-32 px-6 bg-neutral-950 relative z-10 border-t border-white/[0.03]">
             <div id="about" className="max-w-6xl mx-auto scroll-mt-[15vh]">
                 {/* Section Header */}
                 <motion.div
@@ -64,21 +64,21 @@ const About = () => {
                     {/* A. Identity Block */}
                     <AboutBlock title="Identity" delay={0}>
                         <div className="flex flex-wrap">
-                            <IdentityTag delay={0.1}>Software Developer</IdentityTag>
-                            <IdentityTag delay={0.15}>React-focused</IdentityTag>
-                            <IdentityTag delay={0.2}>Expanding into Backend</IdentityTag>
-                            <IdentityTag delay={0.25}>Python / Django</IdentityTag>
-                            <IdentityTag delay={0.3}>Scalable UI Systems</IdentityTag>
+                            <IdentityTag delay={0.05}>Full-Stack Developer</IdentityTag>
+                            <IdentityTag delay={0.1}>Python / Django Backend</IdentityTag>
+                            <IdentityTag delay={0.15}>AWS Cloud Architect</IdentityTag>
+                            <IdentityTag delay={0.2}>API Design (DRF)</IdentityTag>
+                            <IdentityTag delay={0.25}>React Frontend</IdentityTag>
                         </div>
                     </AboutBlock>
 
                     {/* B. What I Do */}
                     <AboutBlock title="What I Do" delay={0.1}>
-                        <AboutItem icon={Code} delay={0.1}>Build responsive, production-ready UIs</AboutItem>
-                        <AboutItem icon={Layers} delay={0.15}>Create reusable React components</AboutItem>
-                        <AboutItem icon={Zap} delay={0.2}>Manage global state with Redux Toolkit</AboutItem>
-                        <AboutItem icon={Globe} delay={0.25}>Integrate REST APIs into frontend</AboutItem>
-                        <AboutItem icon={RefreshCw} delay={0.3}>Improve UI consistency & performance</AboutItem>
+                        <AboutItem icon={Code} delay={0.1}>Build REST APIs with Django REST Framework</AboutItem>
+                        <AboutItem icon={Layers} delay={0.15}>Architect PostgreSQL databases & schemas</AboutItem>
+                        <AboutItem icon={Zap} delay={0.2}>Orchestrate async tasks with Celery & Redis</AboutItem>
+                        <AboutItem icon={Globe} delay={0.25}>Deploy & scale on AWS (EC2, RDS, S3, CloudFront)</AboutItem>
+                        <AboutItem icon={RefreshCw} delay={0.3}>Automate CI/CD with GitHub Actions & Docker</AboutItem>
                     </AboutBlock>
 
                     {/* C. How I Work */}
@@ -91,10 +91,10 @@ const About = () => {
 
                     {/* D. Current Focus */}
                     <AboutBlock title="Current Focus" delay={0.3}>
-                        <AboutItem icon={Target} delay={0.1}>Deepening React & state management</AboutItem>
-                        <AboutItem icon={Target} delay={0.15}>Strengthening backend fundamentals</AboutItem>
-                        <AboutItem icon={Target} delay={0.2}>Writing cleaner, scalable code</AboutItem>
-                        <AboutItem icon={Target} delay={0.25}>Building real-world projects</AboutItem>
+                        <AboutItem icon={Target} delay={0.1}>Scaling Django apps with Celery & Redis caching</AboutItem>
+                        <AboutItem icon={Target} delay={0.15}>AWS infrastructure automation & monitoring</AboutItem>
+                        <AboutItem icon={Target} delay={0.2}>Building AI-powered backend services</AboutItem>
+                        <AboutItem icon={Target} delay={0.25}>Docker & CI/CD for production deployments</AboutItem>
                     </AboutBlock>
 
                     {/* E. Quick Facts */}

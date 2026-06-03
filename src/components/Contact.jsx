@@ -21,7 +21,7 @@ const Contact = () => {
     ];
 
     return (
-        <section id="contact" className="min-h-screen bg-black px-6 py-32 flex flex-col justify-between relative z-10">
+        <section id="contact" className="bg-[#0D0D0D] px-6 pt-24 pb-8 flex flex-col relative z-10 border-t border-white/[0.02]">
             <div className="max-w-7xl mx-auto w-full">
                 <div className="mb-20">
                     <h2 className="text-[10vw] font-black text-white leading-[0.8] tracking-tighter mb-8">
@@ -138,15 +138,15 @@ const Contact = () => {
             </AnimatePresence>
 
             {/* Velocity Marquee Footer */}
-            <div className="mt-20 border-t border-neutral-800 pt-8 overflow-hidden">
+            <div className="mt-10 border-t border-neutral-800 pt-5 overflow-hidden">
                 <VelocityMarquee baseVelocity={2}>
-                    <span className="text-6xl md:text-8xl font-black text-white/5 tracking-tighter uppercase">
+                    <span className="text-6xl md:text-8xl font-black text-white/20 tracking-tighter uppercase">
                         DENNIS JOSEPH • SOFTWARE DEVELOPER • REACT • MOTION DESIGN •
                     </span>
                 </VelocityMarquee>
             </div>
 
-            <div className="flex justify-between items-end text-neutral-600 uppercase text-sm font-medium tracking-widest pt-8">
+            <div className="flex justify-between items-end text-neutral-600 uppercase text-sm font-medium tracking-widest pt-6">
                 <span>© 2026 Dennis Joseph</span>
                 <span>Local Time: {new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', timeZoneName: 'short' })}</span>
             </div>
