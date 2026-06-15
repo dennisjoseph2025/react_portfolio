@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useParams, useNavigate, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, ExternalLink, Github, ChevronRight, ChevronLeft, Layout, Cpu, Lightbulb } from "lucide-react";
 import { getProjectBySlug } from "../data/projects";
 
@@ -24,12 +25,18 @@ const ProjectDetail = () => {
 
     if (!project) {
         return (
-            <div className="min-h-screen bg-black flex items-center justify-center">
-                <div className="text-center">
-                    <h1 className="text-4xl font-bold text-white mb-4">Project not found</h1>
-                    <Link to="/" className="text-white/60 hover:text-white underline">Back to portfolio</Link>
+            <>
+                <Helmet>
+                    <title>Project Not Found — Dennis Joseph Portfolio</title>
+                    <meta name="robots" content="noindex" />
+                </Helmet>
+                <div className="min-h-screen bg-black flex items-center justify-center">
+                    <div className="text-center">
+                        <h1 className="text-4xl font-bold text-white mb-4">Project not found</h1>
+                        <Link to="/" className="text-white/60 hover:text-white underline">Back to portfolio</Link>
+                    </div>
                 </div>
-            </div>
+            </>
         );
     }
 
@@ -37,7 +44,17 @@ const ProjectDetail = () => {
     const prevImage = () => setActiveIdx((prev) => (prev - 1 + project.screenshots.length) % project.screenshots.length);
 
     return (
-        <div className="min-h-screen bg-black text-white relative z-10 selection:bg-white/20 selection:text-white pb-24">
+        <>
+            <Helmet>
+                <title>{project.title} — Dennis Joseph Portfolio</title>
+                <meta name="description" content={`${project.title} — ${project.tagline}. ${project.outcome}`} />
+                <meta property="og:title" content={`${project.title} — Dennis Joseph Portfolio`} />
+                <meta property="og:description" content={`${project.title} — ${project.tagline}. ${project.outcome}`} />
+                <meta property="og:url" content={`https://dennis-r.vercel.app/project/${project.slug}`} />
+                <meta name="twitter:title" content={`${project.title} — Dennis Joseph Portfolio`} />
+                <meta name="twitter:description" content={`${project.title} — ${project.tagline}. ${project.outcome}`} />
+            </Helmet>
+            <div className="min-h-screen bg-black text-white relative z-10 selection:bg-white/20 selection:text-white pb-24">
             
             {/* Ambient Background Glow based on project color */}
             <div 
@@ -251,6 +268,7 @@ const ProjectDetail = () => {
 
             </main>
         </div>
+        </>
     );
 };
 

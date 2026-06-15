@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import ReactLenis from '@studio-freight/react-lenis';
 import Navbar from './components/Navbar';
 import { SpotlightBackground } from './components/SpotlightBackground';
@@ -28,6 +29,15 @@ const MainPage = () => {
 
   return (
     <ReactLenis root>
+      <Helmet>
+        <title>Dennis Joseph — Software Developer Portfolio</title>
+        <meta name="description" content="Dennis Joseph — Software Developer specializing in Python, Django, React, and full-stack development. View projects, skills, and experience." />
+        <meta property="og:title" content="Dennis Joseph — Software Developer Portfolio" />
+        <meta property="og:description" content="Dennis Joseph — Software Developer specializing in Python, Django, React, and full-stack development." />
+        <meta property="og:url" content="https://dennis-r.vercel.app/" />
+        <meta name="twitter:title" content="Dennis Joseph — Software Developer Portfolio" />
+        <meta name="twitter:description" content="Dennis Joseph — Software Developer specializing in Python, Django, React, and full-stack development." />
+      </Helmet>
       <div className="min-h-screen text-secondary overflow-x-hidden relative w-full bg-black">
         <SpotlightBackground />
         <GrainOverlay />
