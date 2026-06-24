@@ -51,8 +51,13 @@ const ProjectDetail = () => {
                 <meta property="og:title" content={`${project.title} — Dennis Joseph Portfolio`} />
                 <meta property="og:description" content={`${project.title} — ${project.tagline}. ${project.outcome}`} />
                 <meta property="og:url" content={`https://dennis-r.vercel.app/project/${project.slug}`} />
+                <meta property="og:image" content={`https://dennis-r.vercel.app${project.image}`} />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content={`${project.title} — Dennis Joseph Portfolio`} />
                 <meta name="twitter:description" content={`${project.title} — ${project.tagline}. ${project.outcome}`} />
+                <meta name="twitter:image" content={`https://dennis-r.vercel.app${project.image}`} />
             </Helmet>
             <div className="min-h-screen bg-black text-white relative z-10 selection:bg-white/20 selection:text-white pb-24">
             
