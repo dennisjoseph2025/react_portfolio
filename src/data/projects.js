@@ -49,9 +49,9 @@ export const projects = [
         id: 3,
         slug: "denjo-c",
         title: "Denjo-C",
-        tagline: "Full-stack e-commerce platform",
+        tagline: "Full-stack e-commerce platform by Denjo",
         problem: "Full-stack e-commerce platform with product catalog, cart, orders, JWT authentication, admin dashboard, and Docker deployment.",
-        description: "Denjo-C is a production-grade e-commerce platform built with Django REST Framework on the backend and React 19 on the frontend. It features a comprehensive product catalog with search and filters, a full shopping cart and order management system with stock tracking, JWT-based authentication with auto-refresh, and a complete admin dashboard for managing products, orders, users, and analytics. The entire stack is Dockerized for seamless deployment.",
+        description: "Denjo-C (by Denjo) is a production-grade e-commerce platform built with Django REST Framework on the backend and React 19 on the frontend. It features a comprehensive product catalog with search and filters, a full shopping cart and order management system with stock tracking, JWT-based authentication with auto-refresh, and a complete admin dashboard for managing products, orders, users, and analytics. The entire stack is Dockerized for seamless deployment.",
         tech: ["React 19", "Vite", "Tailwind CSS", "Redux Toolkit", "Django REST Framework", "PostgreSQL", "Docker", "JWT", "Nginx"],
         built: [
             "Product catalog with category/subcategory filtering, size/price filters, and search",

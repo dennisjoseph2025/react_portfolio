@@ -77,7 +77,7 @@ const Home = () => {
                 className="absolute bottom-12 left-6 md:left-12 flex items-end gap-12 z-20"
             >
                 <div className="max-w-xs text-neutral-400 text-sm md:text-base leading-relaxed">
-                    Building scalable backend systems with Python, Django, and AWS. Full-stack development with a backend focus.
+                    Building scalable backend systems with Python, Django, and AWS. Full-stack development with a backend focus. Known as Denjo in the dev community.
                 </div>
             </motion.div>
         </section>

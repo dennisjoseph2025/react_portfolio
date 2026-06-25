@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Mail, Github, Linkedin, Twitter, FileText, Download, X, Eye } from 'lucide-react';
+import { Mail, Github, Linkedin, Twitter, FileText, Download, X, Eye, Instagram } from 'lucide-react';
 import { MagneticButton } from './MagneticButton';
 import { VelocityMarquee } from './VelocityMarquee';
 import { LetterStagger } from './LetterStagger';
@@ -11,6 +11,7 @@ const Contact = () => {
     const socialLinks = [
         { icon: <Github size={24} />, href: "https://github.com/dennisjoseph2025" },
         { icon: <Linkedin size={24} />, href: "https://linkedin.com/in/dennisjoseph2025" },
+        { icon: <Instagram size={24} />, href: "https://www.instagram.com/its.denjo/" },
         {
             icon: <FileText size={24} />,
             onClick: (e) => {
